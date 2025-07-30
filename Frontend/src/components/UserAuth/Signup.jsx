@@ -41,7 +41,7 @@ const Signup = ({ setActiveCategory }) => {
     if (!validateForm()) return;
 
     try {
-      const response = await axios.post("http://localhost:5050/api/auth/signup", {
+      const response = await axios.post("https://mern-shopping-zu9b.onrender.com/api/auth/signup", {
         emailOrMobile,
         password,
       });
