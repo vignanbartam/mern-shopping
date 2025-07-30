@@ -80,7 +80,7 @@ function Account() {
       formData.append("address", formValues.address);
 
       axios
-        .put(`http://localhost:5050/api/user/${emailOrMobile}`, formData, {
+        .put(`https://mern-shopping-zu9b.onrender.com/api/user/${emailOrMobile}`, formData, {
           headers: {
             "Content-Type": "multipart/form-data",
           },
@@ -104,7 +104,7 @@ function Account() {
     } else {
       // If no new image, update profile without image upload
       axios
-        .put(`http://localhost:5050/api/user/${emailOrMobile}`, formValues)
+        .put(`https://mern-shopping-zu9b.onrender.com/api/user/${emailOrMobile}`, formValues)
         .then((response) => {
           // Update userDetails with the newly updated form values
           setUserDetails({
