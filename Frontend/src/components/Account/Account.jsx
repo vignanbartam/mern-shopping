@@ -27,7 +27,7 @@ function Account() {
     }
 
     axios
-      .get(`http://localhost:5050/api/user/${emailOrMobile}`)
+      .get(`https://mern-shopping-zu9b.onrender.com/api/user/${emailOrMobile}`)
       .then((response) => {
         setUserDetails(response.data);
         setFormValues({
