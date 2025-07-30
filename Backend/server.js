@@ -10,7 +10,7 @@ app.use(bodyParser.json());
 
 // MongoDB connection
 mongoose
-  .connect("mongodb://127.0.0.1:27017/myapp", {
+  .connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
   })
@@ -199,7 +199,7 @@ app.post("/api/contact", async (req, res) => {
 });
 
 // Start server
-const PORT = 5050;
+const PORT = process.env.PORT || 5050;
 app.listen(PORT, () =>
   console.log(`Server running on http://localhost:${PORT}`)
 );
