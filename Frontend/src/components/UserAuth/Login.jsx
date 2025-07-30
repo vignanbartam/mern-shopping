@@ -11,7 +11,7 @@ function Login({ setIsLoggedIn, setUserName, setActiveCategory }) {
     setErrorMessage(""); // Clear previous errors
 
     try {
-      const response = await fetch("http://localhost:5050/api/auth/login", {
+      const response = await fetch("https://mern-shopping-zu9b.onrender.com/api/auth/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ emailOrMobile, password }),
