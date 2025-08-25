@@ -19,7 +19,7 @@ header {
 
 /* Logo styles */
 header .col-md-3 img {
-  height: 80px;
+  height: 70px;
   width: 80px;
 }
 
@@ -124,5 +124,6 @@ header .col-md-3 img {
     text-align: center;
   }
 }
+
 
 
