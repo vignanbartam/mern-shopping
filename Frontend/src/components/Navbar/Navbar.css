@@ -19,8 +19,8 @@ header {
 
 /* Logo styles */
 header .col-md-3 img {
-  height: 100px;
-  width: 100px;
+  height: 80px;
+  width: 80px;
 }
 
 /* Navigation list styles */
@@ -124,4 +124,5 @@ header .col-md-3 img {
     text-align: center;
   }
 }
+
 
